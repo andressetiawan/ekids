@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    padding: 0 2rem;
+}
+
+.success-header {
+    text-align: center;
+}
+
+.success-header > h1 {
+    font-size: 2rem;
+
+}
+
+.success-header > h2 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: .25rem;
+    margin-bottom: 1.25rem;
+}
+
+.success-section {
+    margin-bottom: 1rem;
+}
+
+.success-section > h1  {
+    font-size: 1rem;
+}
+
+.success-section-footer > .btn-download{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    gap: .35rem;
+    font-weight: bold;
+    border: none;
+    padding: .75rem;
+    border-radius: .65rem;
+    background-color: #0054C5;
+    cursor: pointer;
+}
+
+.desc-required {
+    color: red;
+}
+
+.desc-highlight {
+    font-weight: bold;
+}
+
+.success-section-desc {
+    margin-left: .5rem;
+    margin-top: .5rem;
+    font-size: .75rem;
+}
+
+@media (max-width: 300px) {
+    main {
+        padding: 0 1.25rem;
+    }
+}
