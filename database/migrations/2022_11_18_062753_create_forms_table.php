@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string("name");
             $table->enum("gender", ["Laki-laki", "Perempuan"]);
             $table->string("class");
+            $table->date("dateOfBirth");
             $table->enum("phoneCategory", ["Orang tua", "Anak"]);
             $table->string("phoneNumber");
             $table->boolean("isVerify")->default(false);

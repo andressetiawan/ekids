@@ -19,13 +19,13 @@ class HomeController extends Controller
 
     public function create(Request $request)
     {
-
         $data = [
             "name" => $request["name"],
             "gender" => $request["gender"],
             "phoneCategory" => $request["phoneCategory"],
             "phoneNumber" => $request["phoneNumber"],
-            "class" => $request["class"]
+            "class" => $request["class"],
+            "dateOfBirth" => $request["date"]
         ];
 
         try {

@@ -55,13 +55,22 @@
 }
 
 #form-name-input,
-#form-phone-input {
+#form-phone-input,
+#form-date-input {
     padding: 1rem;
     padding-left: 1.25rem;
     background-color: white;
     font-size: 1rem;
     border: 1px solid #bbbbbb;
     border-radius: 8px;
+}
+
+#form-name-input::placeholder {
+    color: #bbbbbb;
+}
+
+#form-date-input {
+    color: #bbbbbb;
 }
 
 .form-card-gender-container {

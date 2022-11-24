@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Form extends Model
 {
     use HasFactory;
-    protected $fillable = ["name", "gender", "phoneCategory", "phoneNumber", "class", "isVerify"];
+    protected $fillable = ["name", "gender", "phoneCategory", "phoneNumber", "class", "isVerify", "dateOfBirth"];
 }

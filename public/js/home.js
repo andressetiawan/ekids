@@ -10,10 +10,15 @@ let postData = {
     gender: "",
     phoneCategory: "",
     phoneNumber: "",
+    birthOfDate: "",
 };
 
 document.querySelector("#form-name-input").addEventListener("keyup", (ev) => {
     postData = { ...postData, name: ev.target.value };
+});
+
+document.querySelector("#form-date-input").addEventListener("change", (ev) => {
+    postData = { ...postData, birthOfDate: ev.target.value };
 });
 
 function clearGenderCards() {
@@ -91,6 +96,9 @@ document.getElementById("btn-submit").addEventListener("click", (ev) => {
     if (postData.name === "") {
         alert("Kolom nama belum terisi");
         ev.preventDefault();
+    } else if (postData.birthOfDate === "") {
+        alert("Kolom nomor tanggal lahir belum lengkap");
+        ev.preventDefault();
     } else if (postData.gender === "") {
         alert("Kolom gender belum terisi");
         ev.preventDefault();
@@ -120,6 +128,7 @@ document.getElementById("btn-submit").addEventListener("click", (ev) => {
     // Success validation
     if (
         postData.name !== "" &&
+        postData.birthOfDate !== "" &&
         postData.gender !== "" &&
         postData.phoneCategory !== "" &&
         IsPhoneValid

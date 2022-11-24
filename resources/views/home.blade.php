@@ -24,6 +24,11 @@
                 </div>
 
                 <div class="form-group">
+                    <h1 class="form-label-title">Tanggal lahir <span class="form-required">*</span></h1>
+                    <input type="date" name="date" id="form-date-input">
+                </div>
+
+                <div class="form-group">
                     <h1 class="form-label-title">Jenis kelamin <span class="form-required">*</span></h1>
                     <input type="hidden" name="gender" id="form-gender-input">
                     <div class="form-card-gender-container">
