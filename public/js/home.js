@@ -110,13 +110,13 @@ document.getElementById("btn-submit").addEventListener("click", (ev) => {
         ev.preventDefault();
     }
 
-    if (postData.phoneNumber === "" && postData.phoneNumber.length < 11) {
+    if (postData.phoneNumber === "" && postData.phoneNumber.length < 5) {
         alert("Masukan nomor handphone yang valid");
         ev.preventDefault();
         IsPhoneValid = false;
     } else if (
         postData.phoneNumber !== "" &&
-        postData.phoneNumber.length < 11
+        postData.phoneNumber.length < 5
     ) {
         alert("Masukan nomor handphone yang valid");
         ev.preventDefault();

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,3 +20,5 @@ Route::post("/", [HomeController::class, "create"]);
 Route::get("success/{id}", [HomeController::class, "success"]);
 Route::get("download/{id}", [HomeController::class, "download"]);
 Route::get("verify/{id}", [HomeController::class, "verify"]);
+Route::get("admin", [AdminController::class, "index"]);
+Route::post("admin", [AdminController::class, "present"]);
